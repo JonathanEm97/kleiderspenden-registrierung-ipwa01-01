@@ -10,7 +10,7 @@
 >
 </head>
 
-<body>
+<body class="bg-light">
 
 <header>
     <h1>HilfeDirekt e.V.</h1>
@@ -22,7 +22,7 @@
     </nav>
 </header>
 
-<main id="start">
+<main id="start" class="container py-4">
 
     <h2>Kleiderspenden-Registrierung</h2>
 
@@ -31,10 +31,10 @@
         einer Krisenregion zugeordnet werden.
     </p>
 
-<section id="registrierung">
+<section id="registrierung" class="mt-5">
     <h2>Spende registrieren</h2>
 
-    <form>
+<form class="bg-white border rounded p-4">
 
         <p>Wie möchtest du die Kleidung übergeben?</p>
 
@@ -67,7 +67,7 @@
             Art der Kleidung:
         </label>
 
-        <select id="kleidung" name="kleidung">
+<select id="kleidung" name="kleidung" class="form-select">
             <option value="">Bitte auswählen</option>
             <option value="Jacken">Jacken</option>
             <option value="Hosen">Hosen</option>
@@ -82,7 +82,7 @@
             Krisengebiet:
         </label>
 
-        <select id="krisengebiet" name="krisengebiet">
+        <select id="krisengebiet" name="krisengebiet" class="form-select">
             <option value="">Bitte auswählen</option>
             <option value="Region A">Krisenregion A</option>
             <option value="Region B">Krisenregion B</option>
@@ -90,7 +90,7 @@
         </select>
 
 
-<div id="abholadresse" style="display: none;">
+<div id="abholadresse">
 
     <h3>Abholadresse</h3>
 
@@ -102,6 +102,7 @@
         type="text"
         id="strasse"
         name="strasse"
+        class="form-control"
     >
 
     <br><br>
@@ -111,11 +112,12 @@
     </label>
 
     <input
-        type="text"
-        id="plz"
-        name="plz"
-        maxlength="5"
-    >
+    type="text"
+    id="plz"
+    name="plz"
+    maxlength="5"
+    class="form-control"
+>
 
     <br><br>
 
@@ -124,16 +126,17 @@
     </label>
 
     <input
-        type="text"
-        id="ort"
-        name="ort"
-    >
+    type="text"
+    id="ort"
+    name="ort"
+    class="form-control"
+>
 
     <br><br>
 
 </div>
 
-<button type="submit">
+<button type="submit" class="btn btn-success">
     Spende registrieren
 </button>
 
