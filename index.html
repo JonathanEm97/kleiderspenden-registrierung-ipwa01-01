@@ -27,10 +27,67 @@
         einer Krisenregion zugeordnet werden.
     </p>
 
-    <section id="registrierung">
-        <h2>Spende registrieren</h2>
-        <p>Das Registrierungsformular folgt im nächsten Schritt.</p>
-    </section>
+<section id="registrierung">
+    <h2>Spende registrieren</h2>
+
+    <form>
+
+        <p>Wie möchtest du die Kleidung übergeben?</p>
+
+        <input
+            type="radio"
+            id="geschaeftsstelle"
+            name="uebergabe"
+            value="Geschaeftsstelle"
+            checked
+        >
+        <label for="geschaeftsstelle">
+            Übergabe an der Geschäftsstelle
+        </label>
+
+        <br>
+
+        <input
+            type="radio"
+            id="abholung"
+            name="uebergabe"
+            value="Abholung"
+        >
+        <label for="abholung">
+            Abholung durch ein Sammelfahrzeug
+        </label>
+
+        <br><br>
+
+        <label for="kleidung">
+            Art der Kleidung:
+        </label>
+
+        <select id="kleidung" name="kleidung">
+            <option value="">Bitte auswählen</option>
+            <option value="Jacken">Jacken</option>
+            <option value="Hosen">Hosen</option>
+            <option value="Pullover">Pullover und Shirts</option>
+            <option value="Schuhe">Schuhe</option>
+            <option value="Kinderkleidung">Kinderkleidung</option>
+        </select>
+
+        <br><br>
+
+        <label for="krisengebiet">
+            Krisengebiet:
+        </label>
+
+        <select id="krisengebiet" name="krisengebiet">
+            <option value="">Bitte auswählen</option>
+            <option value="Region A">Krisenregion A</option>
+            <option value="Region B">Krisenregion B</option>
+            <option value="Region C">Krisenregion C</option>
+        </select>
+
+    </form>
+
+</section>
 
     <section id="informationen">
         <h2>Informationen</h2>
