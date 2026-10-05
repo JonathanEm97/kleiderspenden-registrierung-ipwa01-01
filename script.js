@@ -38,13 +38,21 @@ document.querySelector("form").onsubmit = function() {
         ) {
             alert("Die Abholadresse liegt nicht im Einzugsgebiet der Geschäftsstelle.");
 
-        } else {
-            alert("Die Eingaben für die Abholung sind vollständig.");
-        }
+} else {
+    sessionStorage.setItem("kleidung", kleidung);
+    sessionStorage.setItem("krisengebiet", krisengebiet);
+    sessionStorage.setItem("ort", strasse + ", " + plz + " " + ort);
 
-    } else {
-        alert("Die Eingaben für die Übergabe an der Geschäftsstelle sind vollständig.");
-    }
+    window.location.href = "bestaetigung.html";
+}
+
+} else {
+    sessionStorage.setItem("kleidung", kleidung);
+    sessionStorage.setItem("krisengebiet", krisengebiet);
+    sessionStorage.setItem("ort", "Geschäftsstelle, Musterstraße 10, 10115 Berlin");
+
+    window.location.href = "bestaetigung.html";
+}
 
     return false;
 };
