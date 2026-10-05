@@ -1,3 +1,11 @@
+document.querySelector("#abholung").addEventListener("click", function() {
+    document.querySelector("#abholadresse").style.display = "block";
+});
+
+document.querySelector("#geschaeftsstelle").addEventListener("click", function() {
+    document.querySelector("#abholadresse").style.display = "none";
+});
+
 document.querySelector("form").onsubmit = function() {
 
     let kleidung = document.querySelector("#kleidung").value;
