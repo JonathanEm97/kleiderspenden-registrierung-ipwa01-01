@@ -55,8 +55,13 @@
 
 <form class="bg-white border rounded p-4">
 
-        <p>Wie möchtest du die Kleidung übergeben?</p>
+<div class="mb-4">
 
+    <p>
+        Wie möchtest du die Kleidung übergeben?
+    </p>
+
+    <div>
         <input
             type="radio"
             id="geschaeftsstelle"
@@ -67,9 +72,9 @@
         <label for="geschaeftsstelle">
             Übergabe an der Geschäftsstelle
         </label>
+    </div>
 
-        <br>
-
+    <div>
         <input
             type="radio"
             id="abholung"
@@ -79,86 +84,99 @@
         <label for="abholung">
             Abholung durch ein Sammelfahrzeug
         </label>
-
-        <br><br>
-
-        <label for="kleidung">
-            Art der Kleidung:
-        </label>
-
-<select id="kleidung" name="kleidung" class="form-select">
-            <option value="">Bitte auswählen</option>
-            <option value="Jacken">Jacken</option>
-            <option value="Hosen">Hosen</option>
-            <option value="Pullover">Pullover und Shirts</option>
-            <option value="Schuhe">Schuhe</option>
-            <option value="Kinderkleidung">Kinderkleidung</option>
-        </select>
-
-        <br><br>
-
-        <label for="krisengebiet">
-            Krisengebiet:
-        </label>
-
-<select id="krisengebiet" name="krisengebiet" class="form-select">
-    <option value="">Bitte auswählen</option>
-    <option value="Ukraine">Ukraine</option>
-    <option value="Sudan">Sudan</option>
-    <option value="DR Kongo">Demokratische Republik Kongo</option>
-</select>
-
-
-<div id="abholadresse" style="display: none;">
-
-    <h3>Abholadresse</h3>
-
-    <label for="strasse">
-        Straße und Hausnummer:
-    </label>
-
-    <input
-        type="text"
-        id="strasse"
-        name="strasse"
-        class="form-control"
-    >
-
-    <br><br>
-
-    <label for="plz">
-        Postleitzahl:
-    </label>
-
-    <input
-    type="text"
-    id="plz"
-    name="plz"
-    maxlength="5"
-    class="form-control"
->
-
-    <br><br>
-
-    <label for="ort">
-        Ort:
-    </label>
-
-    <input
-    type="text"
-    id="ort"
-    name="ort"
-    class="form-control"
->
-
-    <br><br>
+    </div>
 
 </div>
 
-<button type="submit" class="btn btn-success">
+<div class="mb-4">
+
+    <label for="kleidung" class="form-label">
+        Art der Kleidung:
+    </label>
+
+    <select id="kleidung" name="kleidung" class="form-select">
+        <option value="">Bitte auswählen</option>
+        <option value="Jacken">Jacken</option>
+        <option value="Hosen">Hosen</option>
+        <option value="Pullover">Pullover und Shirts</option>
+        <option value="Schuhe">Schuhe</option>
+        <option value="Kinderkleidung">Kinderkleidung</option>
+    </select>
+
+</div>
+
+<div class="mb-4">
+
+    <label for="krisengebiet" class="form-label">
+        Krisengebiet:
+    </label>
+
+    <select id="krisengebiet" name="krisengebiet" class="form-select">
+        <option value="">Bitte auswählen</option>
+        <option value="Ukraine">Ukraine</option>
+        <option value="Sudan">Sudan</option>
+        <option value="DR Kongo">Demokratische Republik Kongo</option>
+    </select>
+
+</div>
+
+<div id="abholadresse" style="display: none;" class="mb-3">
+
+    <h3 class="mb-3">
+        Abholadresse
+    </h3>
+
+    <div class="mb-3">
+
+        <label for="strasse" class="form-label">
+            Straße und Hausnummer:
+        </label>
+
+        <input
+            type="text"
+            id="strasse"
+            name="strasse"
+            class="form-control"
+        >
+
+    </div>
+
+    <div class="mb-3">
+
+        <label for="plz" class="form-label">
+            Postleitzahl:
+        </label>
+
+        <input
+            type="text"
+            id="plz"
+            name="plz"
+            maxlength="5"
+            class="form-control"
+        >
+
+    </div>
+
+    <div class="mb-3">
+
+        <label for="ort" class="form-label">
+            Ort:
+        </label>
+
+        <input
+            type="text"
+            id="ort"
+            name="ort"
+            class="form-control"
+        >
+
+    </div>
+
+</div>
+
+<button type="submit" class="btn btn-success mt-2">
     Spende registrieren
 </button>
-
         
     </form>
 
